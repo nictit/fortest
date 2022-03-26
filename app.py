@@ -1,16 +1,14 @@
 import flask
 import os
-import requests
-import add
 import TGapi
-
+import ShipFinder
 app = flask.Flask(__name__)
 
 @app.route("/", methods=['POST'])
 def index():
     chat_id, user_name = TGapi.WH_analyse(flask.request.json)
-    TGapi.sendMsg('working', chat_id, user_name)
-    requests.post('https://api.telegram.org/bot5048232576:AAHKQXWuVI-KIFQOEsDEizTGo9A1Ahjk4cw/sendMessage?text=' + add.text + '&chat_id=659584153')
+    msg = ShipFinder.main()
+    TGapi.sendMsg(msg, chat_id, user_name)
     return 'hi'
 
 if __name__ == '__main__':
