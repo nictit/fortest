@@ -92,10 +92,10 @@ def main():
 
     nor = ''
     cdn = ''
-    for ship in nor_ships_info[:3]:
+    for ship in nor_ships_info[:4]:
         nor += output(ship)
         nor += '\n'
-    for ship in cdn_ships_info[:3]:
+    for ship in cdn_ships_info[:4]:
         cdn += output(ship)
         cdn += '\n'
     allShipsMsg = nor + '\n' + cdn
