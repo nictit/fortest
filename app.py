@@ -2,6 +2,7 @@ import flask
 import os
 import requests
 import add
+import TGapi
 
 app = flask.Flask(__name__)
 
@@ -12,4 +13,6 @@ def index():
     return 'hi'
 
 if __name__ == '__main__':
+    TGapi.deleteWH()
+    TGapi.setWH('https://testapppper.herokuapp.com')
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8443)))
