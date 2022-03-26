@@ -13,5 +13,5 @@ def index():
 
 if __name__ == '__main__':
     TGapi.deleteWH()
-    TGapi.setWH('https://testapppper.herokuapp.com/5048232576:AAHKQXWuVI-KIFQOEsDEizTGo9A1Ahjk4cw')
+    TGapi.setWH('https://testapppper.herokuapp.com/')
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
