@@ -6,7 +6,7 @@ import TGapi
 
 app = flask.Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=['POST'])
 def index():
     requests.post('https://api.telegram.org/bot5048232576:AAHKQXWuVI-KIFQOEsDEizTGo9A1Ahjk4cw/sendMessage?text=' + add.text + '&chat_id=659584153')
     return 'hi'
