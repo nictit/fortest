@@ -9,6 +9,7 @@ def index():
     chat_id, user_name = TGapi.WH_analyse(flask.request.json)
     #msg = ShipFinder.main()
     msg = 'hi'
+    print(msg)
     TGapi.sendMsg(msg, chat_id, user_name)
     return 'hi'
 
