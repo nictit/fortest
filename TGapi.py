@@ -29,7 +29,8 @@ def deleteWH():
 def WH_analyse(WH_triggered):
     chat_id = WH_triggered['message']['from']['id']
     user_name = WH_triggered['message']['from']['first_name']
-    return chat_id, user_name
+    msg_text = WH_triggered['message']['text']
+    return chat_id, user_name, msg_text
 
 # send message to user, who triggered webhook
 # return true if all is ok
