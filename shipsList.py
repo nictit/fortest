@@ -1,29 +1,4 @@
 def ships():
-    nor_ships = [['NOR', 'JWAO', 257012200],
-                 ['NOR', 'LABN', 259041000],
-                 ['NOR', 'JWCD', 259047000],
-                 ['NOR', 'LBDA', 259014000],
-                 ['NOR', 'LABS', 259043000],
-                 ['NOR', 'LBDV', 259018000],
-                 ['NOR', 'LBDB', 259015000],
-                 ['NOR', 'LAQL', 259317000],
-                 ['NOR', 'LASE', 257736000],
-                 ['NOR', 'JWBR', 259050000],
-                 ['NOR', 'LBHH', 257079200],
-                 ['NOR', 'LBDW', 259019000]]
-    cdn_ships = [['CDN', 'CGAX', 316296000],
-                 ['CDN', 'CGAS', 316011116],
-                 ['CDN', 'CGAV', 316113000],
-                 ['CDN', 'CGAN', 316143000],
-                 ['CDN', 'CGAE', 316148000],
-                 ['CDN', 'CGAP', 316138000],
-                 ['CDN', 'CGJC', 316294000],
-                 ['CDN', 'CGJI', 316267000],
-                 ['CDN', 'CGBT', 316014510],
-                 ['CDN', 'CGJG', 316259000],
-                 ['CDN', 'CGJJ', 316295000],
-                 ['CDN', 'CGAZ', 316192000],
-                 ['CDN', 'CGAR', 316160000],
-                 ['CDN', 'CGBV', 316200000],
-                 ['CDN', 'CGAY', 316191000]]
+    nor_ships = [['NOR', 'JWAO', 257012200]]
+    cdn_ships = [['CDN', 'CGAX', 316296000]]
     return nor_ships, cdn_ships
