@@ -7,7 +7,8 @@ app = flask.Flask(__name__)
 @app.route("/", methods=['POST'])
 def index():
     chat_id, user_name = TGapi.WH_analyse(flask.request.json)
-    msg = ShipFinder.main()
+    #msg = ShipFinder.main()
+    msg = 'hi'
     TGapi.sendMsg(msg, chat_id, user_name)
     return 'hi'
 
