@@ -15,4 +15,4 @@ if __name__ == '__main__':
     TGapi.deleteWH()
     TGapi.setWH('https://fortesty.herokuapp.com/')
     print('ready')
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8443)))
+    app.run(host="https://fortesty.herokuapp.com/", port=int(os.environ.get("PORT", 8443)))
