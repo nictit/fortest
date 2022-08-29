@@ -8,6 +8,7 @@ app = flask.Flask(__name__)
 @app.route("/", methods=['POST'])
 def index():
     chat_id, user_name, msg_text = TGapi.WH_analyse(flask.request.json)
+    print(chat_id, user_name, msg_text)
     if msg_text == 'Количество запросов':
         msg = statistic.jsonRead()
     else:
