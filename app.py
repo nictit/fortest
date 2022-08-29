@@ -14,7 +14,7 @@ def index():
         msg = ShipFinder.main()
         statistic.counter()
     print(msg)
-    TGapi.sendMsg(msg, chat_id, user_name)
+    TGapi.sendMsg(str(msg), chat_id, user_name)
     return 'hi'
 
 if __name__ == '__main__':
