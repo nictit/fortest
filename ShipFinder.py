@@ -33,7 +33,7 @@ def getInfo(page_source):
     ship_callsign_and_time = page_source.find('table', attrs={'class': 'aparams'}).text
     callsign = ship_callsign_and_time[ship_callsign_and_time.find('Callsign') + len('Callsign'):ship_callsign_and_time.find('Callsign') + len('Callsign') + 4]
     if not (callsign.isalpha() and callsign.isupper() and len(callsign)==4):
-        callsign = 'error'
+        callsign = 'CGJJ-?'
     time = ship_callsign_and_time[ship_callsign_and_time.find('Position received') + len('Position received') + 1:ship_callsign_and_time.find('ago') + 3]
     time = timeconventer(time)
     first_coordinate,  second_coordinate = decToDegree(first_coordinate,second_coordinate)
